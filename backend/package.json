@@ -5,7 +5,7 @@
   "main": "dist/src/main.js",
   "type": "commonjs",
   "scripts": {
-    "build": "nest build",
+    "build": "npx prisma generate && nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"tests/**/*.ts\"",
     "start": "nest start",
     "dev": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" nest start --watch",
